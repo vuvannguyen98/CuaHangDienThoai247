@@ -19,8 +19,8 @@ namespace DesignWeb_Project.Areas.Admin.Models.BusinessModel
                 Status = true,
                 Image= "/Upload/Default/man-avatar.jpg",
                 Password = md5.EncodeMd5Encrypt("123456"),
-                Address="Ha Noi",
-                Fullname="Đỗ Thắng"
+                Address="TP.HCM",
+                Fullname="Vũ Văn Nguyên"
             };
             context.User.Add(admin);
 
@@ -34,8 +34,8 @@ namespace DesignWeb_Project.Areas.Admin.Models.BusinessModel
                 Status = true,
                 Image = "/Upload/Default/man-avatar.jpg",
                 Password = md5.EncodeMd5Encrypt("1234567"),
-                Address = "Ha Noi",
-                Fullname = "Admin"
+                Address = "TP.HCM",
+                Fullname = "Vũ Văn Nguyên"
             };
 
             context.User.Add(user01);

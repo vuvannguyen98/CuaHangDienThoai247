@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -1329,6 +1330,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Upload\Default\man-avatar.jpg" />
+    <Content Include="Upload\ImageDes\images\logo.png" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1348,7 +1350,6 @@
     <Folder Include="Content\Admin\assets\fonts\" />
     <Folder Include="Content\Samshop\js\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Upload\ImageDes\" />
     <Folder Include="Upload\Images\" />
   </ItemGroup>
   <ItemGroup>

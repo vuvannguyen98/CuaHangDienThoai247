@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace DesignWeb_Project
@@ -13,14 +9,12 @@ namespace DesignWeb_Project
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
-
             routes.MapRoute(
                 name: "Product Category",
                 url: "products/{CategoryID}/{ProductID}/{Alias}",
                 defaults: new { controller = "Product", action = "ProductHome", id = UrlParameter.Optional },
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
-
 
             routes.MapRoute(
                 name: "Collection All",
@@ -29,16 +23,12 @@ namespace DesignWeb_Project
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
 
-
             routes.MapRoute(
                 name: "Colllection ID",
                 url: "collections/{CategoryID}/{Alias}",
                 defaults: new { controller = "collections", action = "GetCollectionID", id = UrlParameter.Optional },
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
-
-
-
 
             routes.MapRoute(
                 name: "Blog ID",
@@ -47,17 +37,12 @@ namespace DesignWeb_Project
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
 
-
-
-
             routes.MapRoute(
                 name: "Article ID",
                 url: "articles/{BlogID}/{ArticleID}/{Alias}",
                 defaults: new { controller = "articles", action = "GetArticleID", id = UrlParameter.Optional },
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
-
-
 
             routes.MapRoute(
                 name: "Cart",
@@ -73,14 +58,12 @@ namespace DesignWeb_Project
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
 
-
             routes.MapRoute(
                 name: "thank you",
                 url: "thankyou",
                 defaults: new { controller = "checkouts", action = "thankyou", id = UrlParameter.Optional },
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
-
 
             routes.MapRoute(
                 name: "page",
@@ -89,7 +72,6 @@ namespace DesignWeb_Project
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
 
-
             routes.MapRoute(
                 name: "contact",
                 url: "pages/{MenuName}",
@@ -97,14 +79,11 @@ namespace DesignWeb_Project
                 namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
 
-
-
-
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces : new string[]{ "DesignWeb_Project.Controllers" } 
+                namespaces: new string[] { "DesignWeb_Project.Controllers" }
             );
         }
     }

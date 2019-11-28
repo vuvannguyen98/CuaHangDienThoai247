@@ -1331,6 +1331,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Upload\Default\man-avatar.jpg" />
     <Content Include="Upload\ImageDes\images\logo.png" />
+    <Content Include="Upload\Images\slider_1_image.jpg" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -1350,7 +1351,6 @@
     <Folder Include="Content\Admin\assets\fonts\" />
     <Folder Include="Content\Samshop\js\" />
     <Folder Include="Scripts\" />
-    <Folder Include="Upload\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
